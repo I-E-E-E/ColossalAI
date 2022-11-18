@@ -7,7 +7,7 @@ from scipy.optimize import linear_sum_assignment
 from torch import nn
 
 from util.box_ops import box_cxcywh_to_xyxy, generalized_box_iou
-from colossalai.registry import LAYERS, MODELS
+from colossalai.registry import LAYERS
 
 @LAYERS.register_module
 class HungarianMatcher(nn.Module):
